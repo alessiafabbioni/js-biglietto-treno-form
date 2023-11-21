@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train form</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+    <main class="container-fluid" >
+        <h1>CALCOLA IL PREZZO DEL BIGLIETTO</h1>
+        <!-- Sezione form -->
+        <section id="ticket-price" class="container-md ms-form">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="NameLastName" class="form-label">Nome Cognome</label>
+                            <input type="NameLastName" class="form-control" id="Name" placeholder="Nome Cognome">
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="Km" class="form-label">Km da percorrere</label>
+                            <input type="Km" class="form-control" id="Km" placeholder="Km da percorrere">
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="Age" class="form-label">Fascia d'età</label>
+                            <select id="Age" class="form-select" aria-label="Default select example">
+                                <option selected>Seleziona l'età</option>
+                                <option value="1">Minorenne</option>
+                                <option value="2">Maggiorenne</option>
+                                <option value="3">Senior</option>
+                              </select>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <div class="row pt-5">
+                            <div class="col">
+                                <button id="genera-button" type="button" class="btn btn-outline-secondary">Genera</button>
+                            </div>
+                            <div class="col">
+                                <button id="annulla-button" type="button" class="btn btn-outline-secondary">Annulla</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+
+                </div>
+        </section>
+
+        <!-- Sezione biglietto -->
+        <section id="biglietto" class="container-md ms-form">
+            <h4>IL TUO BIGLIETTO</h4>
+            <div class="row">
+                <div class="col-3 ms-col1">
+                    <span>NOME PASSEGGERO</span>
+                    <br>
+                    <!-- Id nome cognome -->
+                    <span id="username">Bill Russell</span>
+                </div>
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col">
+                            Offerta
+                        </div>
+                        <div class="col">
+                            Carrozza
+                        </div>
+                        <div class="col">
+                            Codice CP
+                        </div>
+                        <div class="col">
+                            Costo biglietto
+                        </div>
+                    </div>
+                    <div class="row">
+                       <!-- id tipo di biglietto -->
+                        <div class="col">
+                            <span id="offerta"></span>
+                        </div>
+                        <!-- Id numero carrozza: randomico -->
+                        <div class="col">
+                            <span id="carrozza"></span>
+                        </div>
+                        <!-- Id codice CP randomico -->
+                        <div class="col">
+                            <span id="codice-cp"></span>
+                        </div>
+                        <!-- Id costo biglietto -->
+                        <div class="col">
+                            <span id="costo-biglietto"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
