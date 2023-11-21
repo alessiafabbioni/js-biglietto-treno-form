@@ -43,8 +43,8 @@ function displayTicketDetails(name, basePrice, discount, finalPrice) {
 
     document.getElementById('username').innerText = name;
     document.getElementById('offerta').innerText = getOfferType(discount);
-    document.getElementById('carrozza').innerText = getRandomNumber(1, 10); // Random carriage number between 1 and 10
-    document.getElementById('codice-cp').innerText = getRandomNumber(1, 1000); // Random CP code between 1 and 1000
+    document.getElementById('carrozza').innerText = getRandomNumber(1, 10); 
+    document.getElementById('codice-cp').innerText = getRandomNumber(1, 1000); 
     document.getElementById('costo-biglietto').innerText = finalPrice.toFixed(2) + '€';
 }
 
