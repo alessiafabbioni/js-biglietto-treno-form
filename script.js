@@ -18,7 +18,7 @@ function calculateTicketPrice() {
         // Mostra i dettagli passo per passo
         displayTicketDetails(name, basePrice, discount, finalPrice);
     } else {
-        alert('Please fill in all fields before generating the ticket.');
+        alert('Completa tutti i campi prima di generare il biglietto.');
     }
 }
 
