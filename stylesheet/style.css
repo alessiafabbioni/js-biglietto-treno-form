@@ -29,6 +29,7 @@ body h1{
 
 #biglietto {
     margin-top: 40px;
+    display: none;
 }
 
 .ms-col1 {

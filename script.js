@@ -39,7 +39,7 @@ function getDiscount(age) {
 // Funzione per mostrare le info
 function displayTicketDetails(name, basePrice, discount, finalPrice) {
     //nell'html
-    document.getElementById('username').style.display = 'block';
+    document.getElementById('biglietto').style.display = 'block';
 
     document.getElementById('username').innerText = name;
     document.getElementById('offerta').innerText = getOfferType(discount);
